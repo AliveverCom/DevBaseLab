@@ -1,0 +1,8 @@
+bin\Debug\BasicLib.dll
+bin\Debug\BasicLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\BasicLib.dll
+obj\Debug\BasicLib.pdb
+bin\Release\BasicLib.dll
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\BasicLib.dll

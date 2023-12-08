@@ -1,0 +1,67 @@
+G:\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+G:\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+G:\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+G:\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+G:\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+G:\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+G:\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+E:\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+E:\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+E:\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+E:\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+E:\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+E:\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+E:\temp\Plants.vs.Zombies_hh\Plants vs. Zombies\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+D:\MyProject\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+E:\temp\PlantsVsZombies_hh\PlantsVsZombies_hh\temp\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+E:\MyProject\500G_bak1\CSharp2\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\ResolveAssemblyReference.cache
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+D:\2_Personal\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+D:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+D:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+D:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+D:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+D:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csprojAssemblyReference.cache
+D:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csproj.CoreCompileInputs.cache
+D:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csproj.CopyComplete
+D:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+D:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb
+F:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.dll
+F:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\CompilerLab.pdb
+F:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.dll
+F:\MySpace\DevFramework\SourceCode\CompilerLab\bin\Debug\BasicLib.pdb
+F:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csprojAssemblyReference.cache
+F:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csproj.CoreCompileInputs.cache
+F:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.csproj.CopyComplete
+F:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.dll
+F:\MySpace\DevFramework\SourceCode\CompilerLab\obj\Debug\CompilerLab.pdb

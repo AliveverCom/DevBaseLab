@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C6283E5-574C-45B1-9F09-306761112A5F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>BasicLib</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Alivever.Com.DevBasic.BasicLib</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <PublishUrl>http://localhost/BasicLib/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Name>System.Configuration.Install</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Name>System.ServiceProcess</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbListCtrl\AbItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AbListCtrl\AbItemListMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppCtrl\InstallerBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AppVersionCtrl\AppVersionCtrlBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AppVersionCtrl\AppVersionItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\AbChoiceItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\AbChoiceItemsCfgBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\AbChoiceItemsCfgOdbc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\AbChoiceList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CCfgMgrBase.cs" />
+    <Compile Include="CfgCtrl\CfgItem.cs" />
+    <Compile Include="CfgCtrl\CfgEnv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgEnvFileMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgEnvMgrBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgEnvRegMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgFileXmlMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgItemDefine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgItemMulti.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\CfgItemSingle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\GT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CfgCtrl\ICfgContainer.cs" />
+    <Compile Include="CfgCtrl\XTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CloneCtrl\IDeepCloneable.cs" />
+    <Compile Include="Collections\IListTreeable.cs" />
+    <Compile Include="Collections\ObjBox.cs" />
+    <Compile Include="Collections\Pair.cs" />
+    <Compile Include="Collections\StrTEventArgs.cs" />
+    <Compile Include="Collections\TEventArgs.cs" />
+    <Compile Include="DbCtrl\DbCmdSelect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\DbCmdSelectDispCol.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\DbCtrlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\DbMgrBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\DbObjSqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\EDbDataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\EDbProductType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\GDbEnv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\GT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\IDbCmdNode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\IDbMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\IDbObjSql.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\OdbcMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\OptHistoryItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\OptHistoryMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbCtrl\SqlServerMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ECdtRelation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnumItem.cs" />
+    <Compile Include="EnumMgr.cs" />
+    <Compile Include="EPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ESortOrder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EValueType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSysCtrl\CPathFileMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSysCtrl\FileIterator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSysCtrl\PathMgrBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileSysCtrl\PublicEnum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAccessByString.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAsyncErrorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IConnecterBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IdKeyMgr.cs" />
+    <Compile Include="IItemBasic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILogable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemBasic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemBasicCollectionNameMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ItemBasicCollectionVector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IXmlable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\ListTree.cs" />
+    <Compile Include="LogCtrl\GLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\GMLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\GSdkMLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\LogMsgBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\LogMsgMgrBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\MLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogCtrl\SdkLogMsgMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Collections\QuickList.cs" />
+    <Compile Include="SrcAnalysisCtrl\CAnalyserFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CCmdLineItr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrHelper_CPP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrHelper_VB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrSgmtItr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrSgmtItr_CPP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\CmdStrSgmtItr_VB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\ESrcLanguage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SrcAnalysisCtrl\GT.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCtrl\ConsoleTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestCtrl\TestBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CloneCtrl\Cloner.cs" />
+    <Compile Include="ToolsCtrl\CEncoding.cs" />
+    <Compile Include="ToolsCtrl\StringHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolsCtrl\Time.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolsCtrl\TimeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolsCtrl\TimePair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolsCtrl\TypeHelper.cs" />
+    <Compile Include="XmlCtrl\IXmlSerializable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ConnCtrl\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

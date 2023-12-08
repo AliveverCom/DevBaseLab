@@ -1,0 +1,3 @@
+D:\MyProject\CSharp2\DevFramework\SourceCode\BasicLib\bin\Release\BasicLib.dll
+D:\MyProject\CSharp2\DevFramework\SourceCode\BasicLib\obj\Release\ResolveAssemblyReference.cache
+D:\MyProject\CSharp2\DevFramework\SourceCode\BasicLib\obj\Release\BasicLib.dll
