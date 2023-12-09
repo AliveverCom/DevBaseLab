@@ -4,7 +4,7 @@
 ///  <ChangeHistory>
 ///     <Engineer>someone</Engineer>
 ///     <ChangeDate>2013-8-1</ChangeDate>
-///     <ChangeLog>Ôö¼ÓÁË PreCompile()·½·¨µÄ¶¨Òå¡£ÒÔ±ã·ûºÏ¶àÄêÀ´Ñø³ÉµÄÍâ²¿Ï°¹ß¡£ÒÔÇ°µÄinitComiler() ½ñºó½ö×÷ÎªBase³õÊ¼»¯×Ô¼ºµÄ²ÎÊıÊ¹ÓÃ¡£</ChangeLog>
+///     <ChangeLog>å¢åŠ äº† PreCompile()æ–¹æ³•çš„å®šä¹‰ã€‚ä»¥ä¾¿ç¬¦åˆå¤šå¹´æ¥å…»æˆçš„å¤–éƒ¨ä¹ æƒ¯ã€‚ä»¥å‰çš„initComiler() ä»Šåä»…ä½œä¸ºBaseåˆå§‹åŒ–è‡ªå·±çš„å‚æ•°ä½¿ç”¨ã€‚</ChangeLog>
 ///  </ChangeHistory>
 ///</FileHistory>
 
@@ -18,67 +18,67 @@ using Alivever.Com.DevBasic.BasicLib.LogCtrl;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// ËùÓĞ±àÒëÆ÷ÊµÀıµÄ»ùÀà£¬ËüµÄ¶¨ÒåÃèÊöÀ´×ÔÓÚCCompilerTpl
+    /// æ‰€æœ‰ç¼–è¯‘å™¨å®ä¾‹çš„åŸºç±»ï¼Œå®ƒçš„å®šä¹‰æè¿°æ¥è‡ªäºCCompilerTpl
     /// </summary>
     public class CCompilerBase
     {
         /// <summary>
-        /// Î¨Ò»µÄID×Ö·û´®±êÊ¾
+        /// å”¯ä¸€çš„IDå­—ç¬¦ä¸²æ ‡ç¤º
         /// </summary>
         //string IdStr = string.Empty;
 
         /// <summary>
-        /// ±àÒëÆ÷ÊµÀıµÄID£¬ÓÃÓÚ½ñºó¶àÏß³ÌÊµÀıµÄ¹ÜÀí
+        /// ç¼–è¯‘å™¨å®ä¾‹çš„IDï¼Œç”¨äºä»Šåå¤šçº¿ç¨‹å®ä¾‹çš„ç®¡ç†
         /// </summary>
         public string InsIdStr = string.Empty;
 
         /// <summary>
-        /// ±¾±àÒëÆ÷ÊµÀı¶ÔÓ¦µÄ¶¨ÒåËµÃ÷¶ÔÏó
+        /// æœ¬ç¼–è¯‘å™¨å®ä¾‹å¯¹åº”çš„å®šä¹‰è¯´æ˜å¯¹è±¡
         /// </summary>
         public CCompilerTpl CompilerTpl = null;
 
         /// <summary>
-        /// ÓÃÓÚ±íÊ¾±¾´Î±àÒëµÄ½á¹ûÊÇ·ñÓĞĞ§¡£²»ÂÛ´Ë¹ı³ÌÖĞÊÇ·ñ·¢Éú¹ı´íÎó¡£
-        /// Èç¹ûÕâ¸ö±äÁ¿ÎªFalseµÄ»°£¬Ôò±íÊ¾±¾´Î±àÒëÔø¾­±»ÒâÍâÖÕÖ¹ÁË£¬
-        /// ËùÓĞ±àÒëÖĞ²úÉúµÄÖĞ¼ä½á¹û¾ùÎŞĞ§£¬Ó¦±ÜÃâ»ñÈ¡ºÍÊ¹ÓÃ¡£
+        /// ç”¨äºè¡¨ç¤ºæœ¬æ¬¡ç¼–è¯‘çš„ç»“æœæ˜¯å¦æœ‰æ•ˆã€‚ä¸è®ºæ­¤è¿‡ç¨‹ä¸­æ˜¯å¦å‘ç”Ÿè¿‡é”™è¯¯ã€‚
+        /// å¦‚æœè¿™ä¸ªå˜é‡ä¸ºFalseçš„è¯ï¼Œåˆ™è¡¨ç¤ºæœ¬æ¬¡ç¼–è¯‘æ›¾ç»è¢«æ„å¤–ç»ˆæ­¢äº†ï¼Œ
+        /// æ‰€æœ‰ç¼–è¯‘ä¸­äº§ç”Ÿçš„ä¸­é—´ç»“æœå‡æ— æ•ˆï¼Œåº”é¿å…è·å–å’Œä½¿ç”¨ã€‚
         /// </summary>
         public bool ResultAvailable = true;
 
         /// <summary>
-        /// Èç¹û±¾±àÒëÆ÷ÊÇÒ»×é´óĞÍ±àÒëÖĞµÄÒ»Ô±Ê±,
-        /// trueÓÃÓÚÍ¨ÖªÉÏ²ã±àÒëÆ÷¿ÉÒÔ¼ÌĞø½øĞĞºóĞø±àÒë.
-        /// falseÍ¨ÖªÉÏ²ã±àÒëÆ÷Ó¦¸ÃÁ¢¼´ÖĞÖ¹±¾´ÎÕûÌå±àÒë.
+        /// å¦‚æœæœ¬ç¼–è¯‘å™¨æ˜¯ä¸€ç»„å¤§å‹ç¼–è¯‘ä¸­çš„ä¸€å‘˜æ—¶,
+        /// trueç”¨äºé€šçŸ¥ä¸Šå±‚ç¼–è¯‘å™¨å¯ä»¥ç»§ç»­è¿›è¡Œåç»­ç¼–è¯‘.
+        /// falseé€šçŸ¥ä¸Šå±‚ç¼–è¯‘å™¨åº”è¯¥ç«‹å³ä¸­æ­¢æœ¬æ¬¡æ•´ä½“ç¼–è¯‘.
         /// </summary>
         public bool GoOnCompile = true;
 
         /// <summary>
-        /// ±àÒëÆ÷µÄÃû³Æ
+        /// ç¼–è¯‘å™¨çš„åç§°
         /// </summary>
         ///string KeyObj = string.Empty;
 
         /// <summary>
-        /// ±àÒëÆ÷µÄ½éÉÜĞÔÎÄ×Ö
+        /// ç¼–è¯‘å™¨çš„ä»‹ç»æ€§æ–‡å­—
         /// </summary>
         ///string DescStr = string.Empty;
 
         /// <summary>
-        /// Ã¿´Î±àÒëºóËù²úÉúµÄ¸÷ÖÖ±àÒëĞÅÏ¢
+        /// æ¯æ¬¡ç¼–è¯‘åæ‰€äº§ç”Ÿçš„å„ç§ç¼–è¯‘ä¿¡æ¯
         /// </summary>
         public CCompileInfoInsList Infos = new CCompileInfoInsList();//List<CCompileInfoIns> Infos = new List<CCompileInfoIns>();
 
         /// <summary>
-        /// Dictionary[int nStep, string KeyObj],±¾±àÒëÆ÷£¬Ã¿´Î±àÒë¹²ĞèÒª¶àÉÙ¸ö²½Öè£¬ÒÔ¼°Ã¿¸ö²½ÖèµØÃû×Ö¡£ ÕâÑù¿ÉÒÔÅäºÏ½çÃæµÄË¢ĞÂÏÔÊ¾¹¤×÷¡£
+        /// Dictionary[int nStep, string KeyObj],æœ¬ç¼–è¯‘å™¨ï¼Œæ¯æ¬¡ç¼–è¯‘å…±éœ€è¦å¤šå°‘ä¸ªæ­¥éª¤ï¼Œä»¥åŠæ¯ä¸ªæ­¥éª¤åœ°åå­—ã€‚ è¿™æ ·å¯ä»¥é…åˆç•Œé¢çš„åˆ·æ–°æ˜¾ç¤ºå·¥ä½œã€‚
         /// </summary>
         public  Dictionary<int, string> CompileSteps = new Dictionary<int, string>();
 
         /// <summary>
-        /// µ±Ç°ÕıÔÚÖ´ĞĞµÄ²½ÖèĞòºÅ¡£
+        /// å½“å‰æ­£åœ¨æ‰§è¡Œçš„æ­¥éª¤åºå·ã€‚
         /// </summary>
         public int CrrStepNumber = 0;
 
         /// <summary>
-        /// Õâ¸ö·½·¨ĞèÒªÔÚÃ¿Ò»¸ö×ÓÀàÖĞ½øĞĞÖØÔØ¡£ÓÃÓÚ³õÊ¼»¯
-        /// µ±Ç°Ëã·¨£¬Çå¿ÕInfos£¬µ÷ÓÃInitCompileSteps()
+        /// è¿™ä¸ªæ–¹æ³•éœ€è¦åœ¨æ¯ä¸€ä¸ªå­ç±»ä¸­è¿›è¡Œé‡è½½ã€‚ç”¨äºåˆå§‹åŒ–
+        /// å½“å‰ç®—æ³•ï¼Œæ¸…ç©ºInfosï¼Œè°ƒç”¨InitCompileSteps()
         /// </summary>
         virtual protected  bool InitCompiler()
         {
@@ -92,8 +92,8 @@ namespace Alivever.Com.Compiler
 
 
         /// <summary>
-        /// Ô¤±àÒëº¯Êı¡£ÔÚÖ´ĞĞÕæÕıµÄ±àÒëÒÔÇ°£¬×öÒ»ÇĞ¾ßÌåËã·¨µÄÇ°ÖÃ×¼±¸¹¤×÷¡£
-        /// Õâ¸ömethodÔÚ¼Ì³ĞÀàÖĞÖØÔØºóÊ¹ÓÃ¡£
+        /// é¢„ç¼–è¯‘å‡½æ•°ã€‚åœ¨æ‰§è¡ŒçœŸæ­£çš„ç¼–è¯‘ä»¥å‰ï¼Œåšä¸€åˆ‡å…·ä½“ç®—æ³•çš„å‰ç½®å‡†å¤‡å·¥ä½œã€‚
+        /// è¿™ä¸ªmethodåœ¨ç»§æ‰¿ç±»ä¸­é‡è½½åä½¿ç”¨ã€‚
         /// </summary>
         virtual protected  bool PreCompile()
         {
@@ -102,22 +102,22 @@ namespace Alivever.Com.Compiler
 
 
         /// <summary>
-        /// ÔËĞĞ±àÒëÆ÷,Õâ¸ö·½·¨ÊÇ¶ÔÍâ²¿¿É¼ûµÄÖ´ĞĞº¯Êı£¬Ìá¹©Í¨ÓÃµÄ±àÒëÆ÷×ÜÌå¿ØÖÆËã·¨¡£
-        /// 1.µ÷ÓÃInitCompiler()£¬Èç¹ûÊ§°Ü£¬¼ÇLog£¬²¢µ÷ÓÃCancelCompile()£¬ResultAvailable = false,·µ»ØFalse
-        /// 2¡£µ÷ÓÃDoCompile(),£¬Èç¹ûÊ§°Ü£¬¼ÇLog£¬²¢µ÷ÓÃCancelCompile()£¬ResultAvailable = false,·µ»ØFalse
-        /// 3.µ÷ÓÃPostCompile()£¬Èç¹ûÊ§°Ü£¬¼ÇLog£¬²¢µ÷ÓÃCancelCompile()£¬ResultAvailable = false,·µ»ØFalse
-        /// 4. Èç¹ûËùÓĞ¶¼Õı³£½áÊø£¬·µ»ØTrue
-        /// ×¢£º¶ÔÓÚ×ÓÀàÀ´Ëµ£¬Ó¦¸Ã±ÜÃâÖØÔØÕâ¸öÀà£¬¶øÓ¦¸Ã½«ÕæÕıµÄ±àÒëËã·¨Ğ´ÔÚDoCompile()·½·¨ÖĞ¡£
+        /// è¿è¡Œç¼–è¯‘å™¨,è¿™ä¸ªæ–¹æ³•æ˜¯å¯¹å¤–éƒ¨å¯è§çš„æ‰§è¡Œå‡½æ•°ï¼Œæä¾›é€šç”¨çš„ç¼–è¯‘å™¨æ€»ä½“æ§åˆ¶ç®—æ³•ã€‚
+        /// 1.è°ƒç”¨InitCompiler()ï¼Œå¦‚æœå¤±è´¥ï¼Œè®°Logï¼Œå¹¶è°ƒç”¨CancelCompile()ï¼ŒResultAvailable = false,è¿”å›False
+        /// 2ã€‚è°ƒç”¨DoCompile(),ï¼Œå¦‚æœå¤±è´¥ï¼Œè®°Logï¼Œå¹¶è°ƒç”¨CancelCompile()ï¼ŒResultAvailable = false,è¿”å›False
+        /// 3.è°ƒç”¨PostCompile()ï¼Œå¦‚æœå¤±è´¥ï¼Œè®°Logï¼Œå¹¶è°ƒç”¨CancelCompile()ï¼ŒResultAvailable = false,è¿”å›False
+        /// 4. å¦‚æœæ‰€æœ‰éƒ½æ­£å¸¸ç»“æŸï¼Œè¿”å›True
+        /// æ³¨ï¼šå¯¹äºå­ç±»æ¥è¯´ï¼Œåº”è¯¥é¿å…é‡è½½è¿™ä¸ªç±»ï¼Œè€Œåº”è¯¥å°†çœŸæ­£çš„ç¼–è¯‘ç®—æ³•å†™åœ¨DoCompile()æ–¹æ³•ä¸­ã€‚
         /// </summary>
-        /// <returns>False±íÊ¾±àÒë¹ı³ÌÖĞ³öÏÖÑÏÖØ´íÎó¶ø±»Òì³£ÖĞÖ¹¡£</returns>
+        /// <returns>Falseè¡¨ç¤ºç¼–è¯‘è¿‡ç¨‹ä¸­å‡ºç°ä¸¥é‡é”™è¯¯è€Œè¢«å¼‚å¸¸ä¸­æ­¢ã€‚</returns>
         virtual public bool Run()//RunCompiler()
         {
             string errStr = string.Empty;
 
-            ////³õÊ¼»¯±àÒëÆ÷²ÎÊı
+            ////åˆå§‹åŒ–ç¼–è¯‘å™¨å‚æ•°
             if (!this.InitCompiler())
             {
-                errStr = "³õÊ¼»¯±àÒëÆ÷Ê§°Ü¡£±¾´Î±àÒëÖÕÖ¹¡£";
+                errStr = "åˆå§‹åŒ–ç¼–è¯‘å™¨å¤±è´¥ã€‚æœ¬æ¬¡ç¼–è¯‘ç»ˆæ­¢ã€‚";
                 GSdkMLog.At(this.GetType().Namespace).Write(this.GetType().Name + ".RunCompiler", 2, errStr);
                 this.Infos.Add(InfoMaker.NormalError(errStr));
                 ResultAvailable = false;
@@ -125,10 +125,10 @@ namespace Alivever.Com.Compiler
                 return false;
             }
 
-            ////³õÊ¼»¯±àÒëÆ÷²ÎÊı
+            ////åˆå§‹åŒ–ç¼–è¯‘å™¨å‚æ•°
             if (!this.PreCompile())
             {
-                errStr = "Ô¤±àÒëÊ§°Ü¡£±¾´Î±àÒëÖÕÖ¹¡£";
+                errStr = "é¢„ç¼–è¯‘å¤±è´¥ã€‚æœ¬æ¬¡ç¼–è¯‘ç»ˆæ­¢ã€‚";
                 GSdkMLog.At(this.GetType().Namespace).Write(this.GetType().Name + ".PreCompiler", 2, errStr);
                 this.Infos.Add(InfoMaker.NormalError(errStr));
                 ResultAvailable = false;
@@ -136,11 +136,11 @@ namespace Alivever.Com.Compiler
                 return false;
             }
 
-            ////Ö´ĞĞ±àÒë
+            ////æ‰§è¡Œç¼–è¯‘
             this.CrrStepNumber++;
             if (!this.DoCompile())
             {
-                errStr = "Ö´ĞĞÖ÷½âÎöËã·¨Ê±Ê§°Ü¡£±¾´Î±àÒëÖÕÖ¹¡£";
+                errStr = "æ‰§è¡Œä¸»è§£æç®—æ³•æ—¶å¤±è´¥ã€‚æœ¬æ¬¡ç¼–è¯‘ç»ˆæ­¢ã€‚";
                 GSdkMLog.At(this.GetType().Namespace).Write(this.GetType().Name+".RunCompiler", 2, errStr);
                 this.Infos.Add(InfoMaker.NormalError( errStr ));
                 //ResultAvailable = false;
@@ -148,11 +148,11 @@ namespace Alivever.Com.Compiler
                 return false;
             }
 
-            ////½øĞĞ±àÒëºó´¦Àí
+            ////è¿›è¡Œç¼–è¯‘åå¤„ç†
             this.CrrStepNumber++;
             if (!this.PostCompile())
             {
-                errStr = "Ö´ĞĞ±àÒëºó´¦ÀíÊ±Ê§°Ü¡£±¾´Î±àÒëÖÕÖ¹¡£";
+                errStr = "æ‰§è¡Œç¼–è¯‘åå¤„ç†æ—¶å¤±è´¥ã€‚æœ¬æ¬¡ç¼–è¯‘ç»ˆæ­¢ã€‚";
                 GSdkMLog.At(this.GetType().Namespace).Write(this.GetType().Name + ".RunCompiler", 2, errStr);
                 this.Infos.Add(InfoMaker.NormalError( errStr ));
                 //ResultAvailable = false;
@@ -166,8 +166,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÔÚÖ÷±àÒëËã·¨Íê³Éºó½øĞĞµÄºóĞø´¦Àí¡£Í¨³£ÓÃÓÚ½»Ñé±àÒë½á¹ûÊÇ·ñÕıÈ·£¬²¢¹Ø±ÕËùÓĞÔÚ±àÒë¹ı³ÌÖĞ´ò¿ªµÄ×ÊÔ´¡£
-        /// µ±Ç°Ëã·¨£ºµ÷ÓÃReleaseResources()£¬·µ»Øtrue
+        /// åœ¨ä¸»ç¼–è¯‘ç®—æ³•å®Œæˆåè¿›è¡Œçš„åç»­å¤„ç†ã€‚é€šå¸¸ç”¨äºäº¤éªŒç¼–è¯‘ç»“æœæ˜¯å¦æ­£ç¡®ï¼Œå¹¶å…³é—­æ‰€æœ‰åœ¨ç¼–è¯‘è¿‡ç¨‹ä¸­æ‰“å¼€çš„èµ„æºã€‚
+        /// å½“å‰ç®—æ³•ï¼šè°ƒç”¨ReleaseResources()ï¼Œè¿”å›true
         /// </summary>
         /// <returns></returns>
         protected virtual bool PostCompile()
@@ -177,7 +177,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÕæÕıµÄ½âÎöËã·¨º¯Êı¡£ËùÓĞµÄ×ÓÀà¶¼Ó¦¸ÃÖØÔØÕâ¸öº¯Êı¡£
+        /// çœŸæ­£çš„è§£æç®—æ³•å‡½æ•°ã€‚æ‰€æœ‰çš„å­ç±»éƒ½åº”è¯¥é‡è½½è¿™ä¸ªå‡½æ•°ã€‚
         /// </summary>
         protected virtual bool DoCompile()
         {
@@ -185,9 +185,9 @@ namespace Alivever.Com.Compiler
         }//DoCompile()
 
         /// <summary>
-        /// ÔÚ±àÒë¹ı³ÌÖĞ³ö´íµÄÊ±ºòÌá¹©½ô¼±ÊÕÎ²Ëã·¨¡£ÓÃÓÚ¹Ø±ÕËùÓĞÔÚ±àÒëÖĞËù´ò¿ªµÄÎÄ¼ş»ò´ò¿ªµÄ¾ä±ú¡£
-        /// Ïàµ±ÓÚ×÷ÊÕÊ°²Ğ¾ÖµÄ¹¤×÷¡£Ä¬ÈÏµ÷ÓÃReleaseResources()£¬²¢½« ResultAvailable±»ÉèÖÃÎªnull¡£ 
-        /// Èç¹ûĞèÒªÉèÖÃGoOnCompile=false£¬ÔòÓÉ×ÓÀà×Ô¼ºÔÚĞèÒªµÄÊ±ºò¸³Öµ¡£
+        /// åœ¨ç¼–è¯‘è¿‡ç¨‹ä¸­å‡ºé”™çš„æ—¶å€™æä¾›ç´§æ€¥æ”¶å°¾ç®—æ³•ã€‚ç”¨äºå…³é—­æ‰€æœ‰åœ¨ç¼–è¯‘ä¸­æ‰€æ‰“å¼€çš„æ–‡ä»¶æˆ–æ‰“å¼€çš„å¥æŸ„ã€‚
+        /// ç›¸å½“äºä½œæ”¶æ‹¾æ®‹å±€çš„å·¥ä½œã€‚é»˜è®¤è°ƒç”¨ReleaseResources()ï¼Œå¹¶å°† ResultAvailableè¢«è®¾ç½®ä¸ºnullã€‚ 
+        /// å¦‚æœéœ€è¦è®¾ç½®GoOnCompile=falseï¼Œåˆ™ç”±å­ç±»è‡ªå·±åœ¨éœ€è¦çš„æ—¶å€™èµ‹å€¼ã€‚
         /// </summary>
         protected virtual void CancelCompile()
         {
@@ -195,15 +195,15 @@ namespace Alivever.Com.Compiler
             //this.GoOnCompile = false;
             this.ResultAvailable = false;
 
-            string errStr = "ÕıÔÚÈ¡Ïû±¾´Î±àÒë¡£±ê¼Ç±¾´Î±àÒë½á¹ûÎŞĞ§¡£";
+            string errStr = "æ­£åœ¨å–æ¶ˆæœ¬æ¬¡ç¼–è¯‘ã€‚æ ‡è®°æœ¬æ¬¡ç¼–è¯‘ç»“æœæ— æ•ˆã€‚";
             this.Infos.Add(InfoMaker.NormalError(errStr));
 
         }//CancelCompile()
 
         /// <summary>
-        /// ÉèÖÃ±àÒëÆ÷²½Öè
-        /// 1.Çå¿Õthis.CompileSteps
-        /// 2.ÖØÖÃthis.CrrStepNumber = 0
+        /// è®¾ç½®ç¼–è¯‘å™¨æ­¥éª¤
+        /// 1.æ¸…ç©ºthis.CompileSteps
+        /// 2.é‡ç½®this.CrrStepNumber = 0
         /// </summary>
         protected virtual void InitCompileSteps()
         {
@@ -212,9 +212,9 @@ namespace Alivever.Com.Compiler
         }//InitCompileSteps()
 
         /// <summary>
-        /// ²»ÂÛµ±Ç°±àÒëÊÇ·ñ½øĞĞÍê±Ï,¶¼ÊÍ·ÅµôËùÓĞÔÚ±àÒë¹ı³ÌÖĞ´ò¿ªµ«»¹Î´ÊÍ·ÅµôµÄ×ÊÔ´.
+        /// ä¸è®ºå½“å‰ç¼–è¯‘æ˜¯å¦è¿›è¡Œå®Œæ¯•,éƒ½é‡Šæ”¾æ‰æ‰€æœ‰åœ¨ç¼–è¯‘è¿‡ç¨‹ä¸­æ‰“å¼€ä½†è¿˜æœªé‡Šæ”¾æ‰çš„èµ„æº.
         /// nothing have done in this define.
-        /// ×¢:²»°üÀ¨±àÒëµÄ½á¹û¼¯,½á¹û¼¯Ó¦¸ÃÔÚÕû¸ö±àÒëÆ÷¶ÔÏó±»Ïú»ÙÊ±½øĞĞÏú»Ù.
+        /// æ³¨:ä¸åŒ…æ‹¬ç¼–è¯‘çš„ç»“æœé›†,ç»“æœé›†åº”è¯¥åœ¨æ•´ä¸ªç¼–è¯‘å™¨å¯¹è±¡è¢«é”€æ¯æ—¶è¿›è¡Œé”€æ¯.
         /// 
         /// </summary>
         protected virtual void ReleaseResources()

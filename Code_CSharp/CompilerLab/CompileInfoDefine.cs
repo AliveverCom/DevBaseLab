@@ -15,37 +15,37 @@ using System.Text;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// ±àÒëĞÅÏ¢µÄ¡°¶¨ÒåĞÅÏ¢¡±
+    /// ç¼–è¯‘ä¿¡æ¯çš„â€œå®šä¹‰ä¿¡æ¯â€
     /// </summary>
     public class CCompileInfoDefine
     {
         /// <summary>
-        /// Î¨Ò»¶Ì±àÂëµÄIdStr, Èç£ºE00001, W003232µÈµÈ
+        /// å”¯ä¸€çŸ­ç¼–ç çš„IdStr, å¦‚ï¼šE00001, W003232ç­‰ç­‰
         /// </summary>
         public string IdStr = "";
 
         /// <summary>
-        /// ÓÃµãºÅ·Ö¸îµÄ×Ö·û´®£¬±íÊ¾Ã¿¸ö±àÒëĞÅÏ¢²ã´ÎµÄËùÊô¹ØÏµ¡£Èç: ViewExport.WordDexigner.SomeError...
+        /// ç”¨ç‚¹å·åˆ†å‰²çš„å­—ç¬¦ä¸²ï¼Œè¡¨ç¤ºæ¯ä¸ªç¼–è¯‘ä¿¡æ¯å±‚æ¬¡çš„æ‰€å±å…³ç³»ã€‚å¦‚: ViewExport.WordDexigner.SomeError...
         /// </summary>
         public string TraceStrU = "";
 
         /// <summary>
-        /// ¸ÃĞÅÏ¢µÄ±êÌâÃû³Æ¡£ ¿ÉÒÔÀí½âÎªShortName
+        /// è¯¥ä¿¡æ¯çš„æ ‡é¢˜åç§°ã€‚ å¯ä»¥ç†è§£ä¸ºShortName
         /// </summary>
-        public string NameStr = "×Ô¶¨ÒåĞÅÏ¢";
+        public string NameStr = "è‡ªå®šä¹‰ä¿¡æ¯";
 
         /// <summary>
-        /// ±¾±àÒëĞÅÏ¢¶¨ÒåµÄ±íÊöĞÅÏ¢¡£Í¨³£ÃèÊöÎÊÌâ²úÉúµÄÔ­Òò£¬ÒÔ¼°½â¾ö°ì·¨»ò½¨Òé
+        /// æœ¬ç¼–è¯‘ä¿¡æ¯å®šä¹‰çš„è¡¨è¿°ä¿¡æ¯ã€‚é€šå¸¸æè¿°é—®é¢˜äº§ç”Ÿçš„åŸå› ï¼Œä»¥åŠè§£å†³åŠæ³•æˆ–å»ºè®®
         /// </summary>
         public string DescStr = "";
 
         /// <summary>
-        /// ±àÒëĞÅÏ¢µÄÀàĞÍ
+        /// ç¼–è¯‘ä¿¡æ¯çš„ç±»å‹
         /// </summary>
         public int InfoType = (int)ECompileInfo.eError;
 
         /// <summary>
-        /// ±àÒëĞÅÏ¢µÄÑÏÖØµÈ¼¶
+        /// ç¼–è¯‘ä¿¡æ¯çš„ä¸¥é‡ç­‰çº§
         /// </summary>
         public int Severity = (int)ECISeverity.eNormal;
 
@@ -56,7 +56,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eError,
             Severity = (int)ECISeverity.eBlocker,
             NameStr = "BlockerError",
-            DescStr = "±ÀÀ£ĞÔ´íÎó¡£³öÏÖÕâÖÖÎÊÌâÊÇ»áÖ±½Óµ¼ÖÂ±àÒëÒì³£ÖĞÖ¹£¬²¢ÇÒ±àÒë½á¹ûÎŞĞ§¡£Í¨³£ÊÇÃ÷ÏÔ´úÂëÓĞ´íÎó¡£"
+            DescStr = "å´©æºƒæ€§é”™è¯¯ã€‚å‡ºç°è¿™ç§é—®é¢˜æ˜¯ä¼šç›´æ¥å¯¼è‡´ç¼–è¯‘å¼‚å¸¸ä¸­æ­¢ï¼Œå¹¶ä¸”ç¼–è¯‘ç»“æœæ— æ•ˆã€‚é€šå¸¸æ˜¯æ˜æ˜¾ä»£ç æœ‰é”™è¯¯ã€‚"
         };
 
         public static readonly CCompileInfoDefine CriticalError = new CCompileInfoDefine()
@@ -65,7 +65,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eError,
             Severity = (int)ECISeverity.eCritical,
             NameStr = "CriticalError",
-            DescStr = "ÑÏÖØ´íÎó¡£³öÏÖÕâÖÖÎÊÌâÊÇ»áÖ±½Óµ¼ÖÂ±àÒëÖÕÖ¹£¬²¢ÇÒ±àÒë½á¹ûÎŞĞ§¡£¿ÉÄÜÊÇ±»½âÎö¶ÔÏóÃ»ÓĞ°´ÕÕÄ£°åÊéĞ´£¬µ¼ÖÂ±àÒëÎŞ·¨¿ªÕ¹»ò¼ÌĞø¡£"
+            DescStr = "ä¸¥é‡é”™è¯¯ã€‚å‡ºç°è¿™ç§é—®é¢˜æ˜¯ä¼šç›´æ¥å¯¼è‡´ç¼–è¯‘ç»ˆæ­¢ï¼Œå¹¶ä¸”ç¼–è¯‘ç»“æœæ— æ•ˆã€‚å¯èƒ½æ˜¯è¢«è§£æå¯¹è±¡æ²¡æœ‰æŒ‰ç…§æ¨¡æ¿ä¹¦å†™ï¼Œå¯¼è‡´ç¼–è¯‘æ— æ³•å¼€å±•æˆ–ç»§ç»­ã€‚"
         };
 
         public static readonly CCompileInfoDefine MajorError = new CCompileInfoDefine()
@@ -74,7 +74,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eError,
             Severity = (int)ECISeverity.eMajor,
             NameStr = "MajorError",
-            DescStr = "ÖØÒª´íÎó¡£´íÎóÑÏÖØµÈ¼¶½Ï¸ß£¬±àÒëÓĞ½«ÖÕÖ¹£¬±àÒë½á¹ûÎŞĞ§£¬½ö¹©Ğ¡·¶Î§²Î¿¼ºÍ¶Ô±ÈÊ¹ÓÃ¡£"
+            DescStr = "é‡è¦é”™è¯¯ã€‚é”™è¯¯ä¸¥é‡ç­‰çº§è¾ƒé«˜ï¼Œç¼–è¯‘æœ‰å°†ç»ˆæ­¢ï¼Œç¼–è¯‘ç»“æœæ— æ•ˆï¼Œä»…ä¾›å°èŒƒå›´å‚è€ƒå’Œå¯¹æ¯”ä½¿ç”¨ã€‚"
         };
 
         public static readonly CCompileInfoDefine NormalError = new CCompileInfoDefine()
@@ -83,7 +83,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eError,
             Severity = (int)ECISeverity.eNormal,
             NameStr = "NormalError",
-            DescStr = "Ò»°ãĞÔ´íÎó¡£±àÒë²»»áÖÕÖ¹£¬±àÒë½á¹û²»±£Ö¤ÍêÈ«¿ÉÓÃ£¬½ö¹©²Î¿¼¡£"
+            DescStr = "ä¸€èˆ¬æ€§é”™è¯¯ã€‚ç¼–è¯‘ä¸ä¼šç»ˆæ­¢ï¼Œç¼–è¯‘ç»“æœä¸ä¿è¯å®Œå…¨å¯ç”¨ï¼Œä»…ä¾›å‚è€ƒã€‚"
         };
 
         public static readonly CCompileInfoDefine MinorError = new CCompileInfoDefine()
@@ -92,7 +92,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eError,
             Severity = (int)ECISeverity.eMinor,
             NameStr = "NormalError",
-            DescStr = "ÇáÎ¢´íÎó¡£±àÒë²»»áÖÕÖ¹£¬±àÒë½á¹û¿ÉÓÃ¡£"
+            DescStr = "è½»å¾®é”™è¯¯ã€‚ç¼–è¯‘ä¸ä¼šç»ˆæ­¢ï¼Œç¼–è¯‘ç»“æœå¯ç”¨ã€‚"
         };
 
         public static readonly CCompileInfoDefine CriticalWarrning = new CCompileInfoDefine()
@@ -101,7 +101,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eWarrning,
             Severity = (int)ECISeverity.eCritical,
             NameStr = "NormalWarrning",
-            DescStr = "ÑÏÖØ¾¯¸æ¡£±àÒë²»»áÖÕÖ¹£¬µ«ºÜ¿ÉÄÜ½«ÓĞÒşº¬µÄ´íÎó»á·¢Éú¡£½¨ÒéReview±»´¦Àí¶ÔÏóºÍ½á¹û¼¯¡£"
+            DescStr = "ä¸¥é‡è­¦å‘Šã€‚ç¼–è¯‘ä¸ä¼šç»ˆæ­¢ï¼Œä½†å¾ˆå¯èƒ½å°†æœ‰éšå«çš„é”™è¯¯ä¼šå‘ç”Ÿã€‚å»ºè®®Reviewè¢«å¤„ç†å¯¹è±¡å’Œç»“æœé›†ã€‚"
         };
 
         public static readonly CCompileInfoDefine NormalWarrning = new CCompileInfoDefine()
@@ -110,7 +110,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eWarrning,
             Severity = (int)ECISeverity.eNormal,
             NameStr = "NormalWarrning",
-            DescStr = "Õı³£ĞÔ¾¯¸æ¡£±àÒëÕı³£½øĞĞ¡£"
+            DescStr = "æ­£å¸¸æ€§è­¦å‘Šã€‚ç¼–è¯‘æ­£å¸¸è¿›è¡Œã€‚"
         };
 
         public static readonly CCompileInfoDefine NormalSuggestion = new CCompileInfoDefine()
@@ -120,7 +120,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eSuggestion,
             Severity = (int)ECISeverity.eNormal,
             NameStr = "NormalSuggestion",
-            DescStr = "Ò»°ãĞÔ½¨Òé¡£"
+            DescStr = "ä¸€èˆ¬æ€§å»ºè®®ã€‚"
         };
 
         public static readonly CCompileInfoDefine NormalMessage = new CCompileInfoDefine()
@@ -129,7 +129,7 @@ namespace Alivever.Com.Compiler
             InfoType = (int)ECompileInfo.eMessage,
             Severity = (int)ECISeverity.eNormal,
             NameStr = "NormalMessage",
-            DescStr = "ÆÕÍ¨ĞÅÏ¢¡£"
+            DescStr = "æ™®é€šä¿¡æ¯ã€‚"
         };
 
 

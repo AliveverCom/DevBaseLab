@@ -14,17 +14,17 @@ using System.Text;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// Õë¶ÔCCompileInfoInsÁÐ±íÀà¡£Ìá¹©Ò»Ð©¹«ÓÃµÄ·ÖÎö±àÒë½á¹ûµÄ·½·¨
+    /// é’ˆå¯¹CCompileInfoInsåˆ—è¡¨ç±»ã€‚æä¾›ä¸€äº›å…¬ç”¨çš„åˆ†æžç¼–è¯‘ç»“æžœçš„æ–¹æ³•
     /// </summary>
     public class CCompileInfoInsList : List<CCompileInfoIns>
     {
         #region Add Predefined infos
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddBlockerError(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.BlockerError(_InfoDescStr);
@@ -34,10 +34,10 @@ namespace Alivever.Com.Compiler
         }//Add
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddCriticalError(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.CriticalError(_InfoDescStr);
@@ -47,10 +47,10 @@ namespace Alivever.Com.Compiler
         }//AddCriticalError
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddMajorError(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.MajorError(_InfoDescStr);
@@ -60,10 +60,10 @@ namespace Alivever.Com.Compiler
         }//AddMajorError
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddNormalError(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.NormalError(_InfoDescStr);
@@ -73,10 +73,10 @@ namespace Alivever.Com.Compiler
         }//AddNormalError
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddMinorError(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.MinorError(_InfoDescStr);
@@ -86,10 +86,10 @@ namespace Alivever.Com.Compiler
         }//AddMinorError
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddCriticalWarrning(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.CriticalWarrning(_InfoDescStr);
@@ -99,10 +99,10 @@ namespace Alivever.Com.Compiler
         }//AddCriticalWarrning
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddNormalWarrning(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.NormalWarrning(_InfoDescStr);
@@ -112,10 +112,10 @@ namespace Alivever.Com.Compiler
         }//AddNormalWarrning
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public CCompileInfoIns AddNormalSuggestion(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.NormalSuggestion(_InfoDescStr);
@@ -125,10 +125,10 @@ namespace Alivever.Com.Compiler
         }//AddNormalSuggestion
 
         /// <summary>
-        /// ×Ô¶¯´´½¨Ò»¸öÔ¤¶¨ÒåÀàÐÍµÄInfo,²¢½«Õâ¸ö¶ÔÏó¼ÓÈëµ½InfoListÖÐ.
+        /// è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªé¢„å®šä¹‰ç±»åž‹çš„Info,å¹¶å°†è¿™ä¸ªå¯¹è±¡åŠ å…¥åˆ°InfoListä¸­.
         /// </summary>
-        /// <param name="_InfoDescStr">ÐèÒªÐÂÔöµÄInfoµÄÃèÊö</param>
-        /// <returns>·µ»ØÐÂ½¨µÄÕâ¸ö¶ÔÏó,ÒÔ±ã¿ª·¢ÈËÔ±ËæºóÔö¼Ó»ò¸ü¸ÄÆäÊôÐÔ.</returns>
+        /// <param name="_InfoDescStr">éœ€è¦æ–°å¢žçš„Infoçš„æè¿°</param>
+        /// <returns>è¿”å›žæ–°å»ºçš„è¿™ä¸ªå¯¹è±¡,ä»¥ä¾¿å¼€å‘äººå‘˜éšåŽå¢žåŠ æˆ–æ›´æ”¹å…¶å±žæ€§.</returns>
         public  CCompileInfoIns AddNormalMessage(string _InfoDescStr)
         {
             CCompileInfoIns rstInfo = InfoMaker.NormalMessage(_InfoDescStr);
@@ -138,12 +138,12 @@ namespace Alivever.Com.Compiler
         }//AddNormalMessage
 
         /// <summary>
-        /// ÅúÁ¿Ôö¼Óinfo¡£Ôö¼ÓÒÔºó_infoListÖÐËùÓÐ¶ÔÏóµÄÐòºÅ½«±»ÖØÖÃÎªÊÊºÏµ±Ç°ÐòÁÐµÄÐòºÅ--Ïòºó×·¼Ó¡£
+        /// æ‰¹é‡å¢žåŠ infoã€‚å¢žåŠ ä»¥åŽ_infoListä¸­æ‰€æœ‰å¯¹è±¡çš„åºå·å°†è¢«é‡ç½®ä¸ºé€‚åˆå½“å‰åºåˆ—çš„åºå·--å‘åŽè¿½åŠ ã€‚
         /// </summary>
         /// <param name="_infoList"></param>
         public void AddRange(CCompileInfoInsList _infoList)
         {
-            ////Ë³ÐòµÝÑØÃ¿¸öinfoµÄÐòºÅ£¬¶ø²»ÔÙ²ÉÓÃÔ­_infoListÖÐµÄÐèÒª¡£
+            ////é¡ºåºé€’æ²¿æ¯ä¸ªinfoçš„åºå·ï¼Œè€Œä¸å†é‡‡ç”¨åŽŸ_infoListä¸­çš„éœ€è¦ã€‚
             int i=1;
             foreach (CCompileInfoIns crrItem in _infoList)
             {
@@ -159,7 +159,7 @@ namespace Alivever.Com.Compiler
         #region Select from Infos
 
         /// <summary>
-        /// Í¨ÓÃµÄÐÅÏ¢²éÑ¯Ëã·¨¡£ ÔÚËùÓÐ±àÒëÐÅÏ¢ÖÐ²éÕÒ²¢·µ»ØËùÓÐ _InfoTypeÀàÐÍµÄÐÅÏ¢
+        /// é€šç”¨çš„ä¿¡æ¯æŸ¥è¯¢ç®—æ³•ã€‚ åœ¨æ‰€æœ‰ç¼–è¯‘ä¿¡æ¯ä¸­æŸ¥æ‰¾å¹¶è¿”å›žæ‰€æœ‰ _InfoTypeç±»åž‹çš„ä¿¡æ¯
         /// </summary>
         /// <param name="_InfoType"></param>
         /// <returns></returns>
@@ -175,7 +175,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÔÚËùÓÐ±àÒëÐÅÏ¢ÖÐ²éÕÒ²¢·µ»ØËùÓÐ ErrorÀàÐÍµÄÐÅÏ¢
+        /// åœ¨æ‰€æœ‰ç¼–è¯‘ä¿¡æ¯ä¸­æŸ¥æ‰¾å¹¶è¿”å›žæ‰€æœ‰ Errorç±»åž‹çš„ä¿¡æ¯
         /// </summary>
         public IEnumerable<CCompileInfoIns> ErrorInfos
         {
@@ -186,7 +186,7 @@ namespace Alivever.Com.Compiler
         }//ErrorInfos
 
         /// <summary>
-        ///  ÔÚËùÓÐ±àÒëÐÅÏ¢ÖÐ²éÕÒ²¢·µ»ØËùÓÐ WarrningÀàÐÍµÄÐÅÏ¢
+        ///  åœ¨æ‰€æœ‰ç¼–è¯‘ä¿¡æ¯ä¸­æŸ¥æ‰¾å¹¶è¿”å›žæ‰€æœ‰ Warrningç±»åž‹çš„ä¿¡æ¯
         /// </summary>
         public IEnumerable<CCompileInfoIns> WarrningInfos
         {
@@ -197,7 +197,7 @@ namespace Alivever.Com.Compiler
         }//WarrningInfos
 
         /// <summary>
-        /// ÔÚËùÓÐ±àÒëÐÅÏ¢ÖÐ²éÕÒ²¢·µ»ØËùÓÐ SuggestionÀàÐÍµÄÐÅÏ¢
+        /// åœ¨æ‰€æœ‰ç¼–è¯‘ä¿¡æ¯ä¸­æŸ¥æ‰¾å¹¶è¿”å›žæ‰€æœ‰ Suggestionç±»åž‹çš„ä¿¡æ¯
         /// </summary>
         public IEnumerable<CCompileInfoIns> SuggestionInfos
         {
@@ -208,7 +208,7 @@ namespace Alivever.Com.Compiler
         }//SuggestionInfos
 
         /// <summary>
-        /// ÔÚËùÓÐ±àÒëÐÅÏ¢ÖÐ²éÕÒ²¢·µ»ØËùÓÐ MessageÀàÐÍµÄÐÅÏ¢
+        /// åœ¨æ‰€æœ‰ç¼–è¯‘ä¿¡æ¯ä¸­æŸ¥æ‰¾å¹¶è¿”å›žæ‰€æœ‰ Messageç±»åž‹çš„ä¿¡æ¯
         /// </summary>
         public IEnumerable<CCompileInfoIns> MessageInfos
         {
@@ -223,7 +223,7 @@ namespace Alivever.Com.Compiler
         #region To String
 
         /// <summary>
-        /// ½«ËùÓÐµÄÐÅÏ¢,ÒÔÃ¿¸öÒ»ÐÐµÄÐÎÊ½×ª»¯ÎªÒ»¸ö×ÛºÏµÄÎÄ±¾.Ò»°ãÓÃÓÚÊä³öLog
+        /// å°†æ‰€æœ‰çš„ä¿¡æ¯,ä»¥æ¯ä¸ªä¸€è¡Œçš„å½¢å¼è½¬åŒ–ä¸ºä¸€ä¸ªç»¼åˆçš„æ–‡æœ¬.ä¸€èˆ¬ç”¨äºŽè¾“å‡ºLog
         /// </summary>
         public string AllInfoStr
         {
@@ -236,7 +236,7 @@ namespace Alivever.Com.Compiler
                     ECompileInfo infoType = (ECompileInfo)Enum.Parse(typeof(ECompileInfo), crrInfo.InfoDefine.InfoType.ToString());
                     rstStr += "[" + i.ToString() + "]"
                         + "[" + CECompileInfo.Ins[infoType].DisplayName + "]"
-                        + crrInfo.DescSelfStr + "\n\t"; //×¢:ÔÚÄ³Ð©³¡ºÏÖÐ\n»á±»VS»òÆäËûµ÷ÊÔ³ÌÐòºöÂÔ.Òò´Ë±£Áô\t,ÒÔ±ã½øÐÐÌæ»».
+                        + crrInfo.DescSelfStr + "\n\t"; //æ³¨:åœ¨æŸäº›åœºåˆä¸­\nä¼šè¢«VSæˆ–å…¶ä»–è°ƒè¯•ç¨‹åºå¿½ç•¥.å› æ­¤ä¿ç•™\t,ä»¥ä¾¿è¿›è¡Œæ›¿æ¢.
                     i++;
 
                 }
@@ -246,7 +246,7 @@ namespace Alivever.Com.Compiler
 
 
         /// <summary>
-        /// ÓëAllInfoStr½á¹ûÏàÍ¬
+        /// ä¸ŽAllInfoStrç»“æžœç›¸åŒ
         /// </summary>
         /// <returns></returns>
         public override string ToString()
@@ -256,10 +256,10 @@ namespace Alivever.Com.Compiler
 
         #endregion //To String
 
-        #region ¶¨ÐÔÅÐ¶Ï½á¹û
+        #region å®šæ€§åˆ¤æ–­ç»“æžœ
         /// <summary>
-        /// ÅÐ¶Ïµ±Ç°±àÒëÐÅÏ¢ÖÐÊÇ·ñ´æÔÚBlockerError¡£
-        /// ÒòÎª¶ÔÓÚÄ³Ð©²Ù×÷À´Ëµ£¬Èç¹û½á¹ûÖÐÓÐBlockerError´æÔÚµÄ»°£¬¾ÍÐèÒªÁ¢¼´ÖÐÖ¹±àÒë»òºóÐø´¦ÀíÁË¡£
+        /// åˆ¤æ–­å½“å‰ç¼–è¯‘ä¿¡æ¯ä¸­æ˜¯å¦å­˜åœ¨BlockerErrorã€‚
+        /// å› ä¸ºå¯¹äºŽæŸäº›æ“ä½œæ¥è¯´ï¼Œå¦‚æžœç»“æžœä¸­æœ‰BlockerErrorå­˜åœ¨çš„è¯ï¼Œå°±éœ€è¦ç«‹å³ä¸­æ­¢ç¼–è¯‘æˆ–åŽç»­å¤„ç†äº†ã€‚
         /// </summary>
         public bool HasBlockerError
         {
@@ -270,8 +270,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐÖ¸¶¨ÀàÐÍµÄÔªËØ¡£
-        /// Õâ¸öËã·¨±ÈÏÖµÃµ½½á¹û¶ÔÏó¼¯½øÐÐÈ»ºóÔÙ½øÐÐ¶¨ÐÔÅÐ¶ÏµÄÔËÐÐÐ§ÂÊ¸ßºÜ¶à¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æŒ‡å®šç±»åž‹çš„å…ƒç´ ã€‚
+        /// è¿™ä¸ªç®—æ³•æ¯”çŽ°å¾—åˆ°ç»“æžœå¯¹è±¡é›†è¿›è¡Œç„¶åŽå†è¿›è¡Œå®šæ€§åˆ¤æ–­çš„è¿è¡Œæ•ˆçŽ‡é«˜å¾ˆå¤šã€‚
         /// </summary>
         public bool HasError
         {
@@ -282,8 +282,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐÖ¸¶¨ÀàÐÍµÄÔªËØ¡£
-        /// Õâ¸öËã·¨±ÈÏÖµÃµ½½á¹û¶ÔÏó¼¯½øÐÐÈ»ºóÔÙ½øÐÐ¶¨ÐÔÅÐ¶ÏµÄÔËÐÐÐ§ÂÊ¸ßºÜ¶à¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æŒ‡å®šç±»åž‹çš„å…ƒç´ ã€‚
+        /// è¿™ä¸ªç®—æ³•æ¯”çŽ°å¾—åˆ°ç»“æžœå¯¹è±¡é›†è¿›è¡Œç„¶åŽå†è¿›è¡Œå®šæ€§åˆ¤æ–­çš„è¿è¡Œæ•ˆçŽ‡é«˜å¾ˆå¤šã€‚
         /// </summary>
         public bool HasMessage
         {
@@ -294,8 +294,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐÖ¸¶¨ÀàÐÍµÄÔªËØ¡£
-        /// Õâ¸öËã·¨±ÈÏÖµÃµ½½á¹û¶ÔÏó¼¯½øÐÐÈ»ºóÔÙ½øÐÐ¶¨ÐÔÅÐ¶ÏµÄÔËÐÐÐ§ÂÊ¸ßºÜ¶à¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æŒ‡å®šç±»åž‹çš„å…ƒç´ ã€‚
+        /// è¿™ä¸ªç®—æ³•æ¯”çŽ°å¾—åˆ°ç»“æžœå¯¹è±¡é›†è¿›è¡Œç„¶åŽå†è¿›è¡Œå®šæ€§åˆ¤æ–­çš„è¿è¡Œæ•ˆçŽ‡é«˜å¾ˆå¤šã€‚
         /// </summary>
         public bool HasSuggestion
         {
@@ -306,8 +306,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐÖ¸¶¨ÀàÐÍµÄÔªËØ¡£
-        /// Õâ¸öËã·¨±ÈÏÖµÃµ½½á¹û¶ÔÏó¼¯½øÐÐÈ»ºóÔÙ½øÐÐ¶¨ÐÔÅÐ¶ÏµÄÔËÐÐÐ§ÂÊ¸ßºÜ¶à¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æŒ‡å®šç±»åž‹çš„å…ƒç´ ã€‚
+        /// è¿™ä¸ªç®—æ³•æ¯”çŽ°å¾—åˆ°ç»“æžœå¯¹è±¡é›†è¿›è¡Œç„¶åŽå†è¿›è¡Œå®šæ€§åˆ¤æ–­çš„è¿è¡Œæ•ˆçŽ‡é«˜å¾ˆå¤šã€‚
         /// </summary>
         public bool HasUnknow
         {
@@ -318,8 +318,8 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐÖ¸¶¨ÀàÐÍµÄÔªËØ¡£
-        /// Õâ¸öËã·¨±ÈÏÖµÃµ½½á¹û¶ÔÏó¼¯½øÐÐÈ»ºóÔÙ½øÐÐ¶¨ÐÔÅÐ¶ÏµÄÔËÐÐÐ§ÂÊ¸ßºÜ¶à¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æŒ‡å®šç±»åž‹çš„å…ƒç´ ã€‚
+        /// è¿™ä¸ªç®—æ³•æ¯”çŽ°å¾—åˆ°ç»“æžœå¯¹è±¡é›†è¿›è¡Œç„¶åŽå†è¿›è¡Œå®šæ€§åˆ¤æ–­çš„è¿è¡Œæ•ˆçŽ‡é«˜å¾ˆå¤šã€‚
         /// </summary>
         public bool HasWarrning
         {
@@ -331,9 +331,9 @@ namespace Alivever.Com.Compiler
 
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ï£¬Ö»Òªµ±Ç°¼¯ºÏÖÐ·¢Ò»¸ö·ûºÏÌõ¼þµÄÐÅÏ¢¾Í·µ»ØTrue
+        /// å®šæ€§åˆ¤æ–­ï¼Œåªè¦å½“å‰é›†åˆä¸­å‘ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„ä¿¡æ¯å°±è¿”å›žTrue
         /// </summary>
-        /// <param name="_InfoType">ÐÅÏ¢ÀàÐÍ</param>
+        /// <param name="_InfoType">ä¿¡æ¯ç±»åž‹</param>
         /// <returns></returns>
         public bool HasInfo(ECompileInfo _InfoType)
         {
@@ -347,10 +347,10 @@ namespace Alivever.Com.Compiler
         }//HasInfo(ECompileInfo _InfoType)
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ï£¬Ö»Òªµ±Ç°¼¯ºÏÖÐ·¢Ò»¸ö·ûºÏÌõ¼þµÄÐÅÏ¢¾Í·µ»ØTrue
+        /// å®šæ€§åˆ¤æ–­ï¼Œåªè¦å½“å‰é›†åˆä¸­å‘ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„ä¿¡æ¯å°±è¿”å›žTrue
         /// </summary>
-        /// <param name="_Severity">ÑÏÖØ³Ì¶È</param>
-        /// <param name="_InfoType">ÐÅÏ¢ÀàÐÍ</param>
+        /// <param name="_Severity">ä¸¥é‡ç¨‹åº¦</param>
+        /// <param name="_InfoType">ä¿¡æ¯ç±»åž‹</param>
         /// <returns></returns>
         public bool HasInfo(ECISeverity _Severity, ECompileInfo _InfoType)
         {
@@ -364,9 +364,9 @@ namespace Alivever.Com.Compiler
         }//HasInfo(ECISeverity _Severity, ECompileInfo _InfoType)
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐ_InfoType¼¶±ð»ò¸ü¼ÓÑÏÖØµÄÐÅÏ¢¡£
-        /// ÕâÍ¨³£ÓÐÖúÓÚÒ»Ð©±àÒëºó´¦ÀíµÄ½øÐÐ¡£
-        /// ÀýÈç£ºÈç¹û´æÔÚÓÐwarrning»ò¸ü¸ßÒÔÉÏ¼¶±ðµÄÎÊÌâÊÇ£¬¾ÍÔÝÍ£ºóÐø´¦Àí¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰_InfoTypeçº§åˆ«æˆ–æ›´åŠ ä¸¥é‡çš„ä¿¡æ¯ã€‚
+        /// è¿™é€šå¸¸æœ‰åŠ©äºŽä¸€äº›ç¼–è¯‘åŽå¤„ç†çš„è¿›è¡Œã€‚
+        /// ä¾‹å¦‚ï¼šå¦‚æžœå­˜åœ¨æœ‰warrningæˆ–æ›´é«˜ä»¥ä¸Šçº§åˆ«çš„é—®é¢˜æ˜¯ï¼Œå°±æš‚åœåŽç»­å¤„ç†ã€‚
         /// </summary>
         /// <param name="_InfoType"></param>
         /// <returns></returns>
@@ -382,9 +382,9 @@ namespace Alivever.Com.Compiler
         }//HasInfo(ECompileInfo _InfoType)
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐ_InfoType¼¶±ð»ò¸ü¼ÓÑÏÖØµÄÐÅÏ¢¡£
-        /// ÕâÍ¨³£ÓÐÖúÓÚÒ»Ð©±àÒëºó´¦ÀíµÄ½øÐÐ¡£
-        /// ÀýÈç£ºÈç¹û´æÔÚÓÐwarrning»ò¸ü¸ßÒÔÉÏ¼¶±ðµÄÎÊÌâÊÇ£¬¾ÍÔÝÍ£ºóÐø´¦Àí¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰_InfoTypeçº§åˆ«æˆ–æ›´åŠ ä¸¥é‡çš„ä¿¡æ¯ã€‚
+        /// è¿™é€šå¸¸æœ‰åŠ©äºŽä¸€äº›ç¼–è¯‘åŽå¤„ç†çš„è¿›è¡Œã€‚
+        /// ä¾‹å¦‚ï¼šå¦‚æžœå­˜åœ¨æœ‰warrningæˆ–æ›´é«˜ä»¥ä¸Šçº§åˆ«çš„é—®é¢˜æ˜¯ï¼Œå°±æš‚åœåŽç»­å¤„ç†ã€‚
         /// </summary>
         /// <param name="_InfoType"></param>
         /// <returns></returns>
@@ -402,9 +402,9 @@ namespace Alivever.Com.Compiler
 
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐ±È_InfoType¸ü¼ÓÑÏÖØµÄÐÅÏ¢¡£
-        /// ÕâÍ¨³£ÓÐÖúÓÚÒ»Ð©±àÒëºó´¦ÀíµÄ½øÐÐ¡£
-        /// ÀýÈç£ºÈç¹û´æÔÚÓÐ±Èwarrning¸ü¸ßÒÔÉÏ¼¶±ðµÄÎÊÌâÊÇ£¬¾ÍÔÝÍ£ºóÐø´¦Àí¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æ¯”_InfoTypeæ›´åŠ ä¸¥é‡çš„ä¿¡æ¯ã€‚
+        /// è¿™é€šå¸¸æœ‰åŠ©äºŽä¸€äº›ç¼–è¯‘åŽå¤„ç†çš„è¿›è¡Œã€‚
+        /// ä¾‹å¦‚ï¼šå¦‚æžœå­˜åœ¨æœ‰æ¯”warrningæ›´é«˜ä»¥ä¸Šçº§åˆ«çš„é—®é¢˜æ˜¯ï¼Œå°±æš‚åœåŽç»­å¤„ç†ã€‚
         /// </summary>
         /// <param name="_InfoType"></param>
         /// <returns></returns>
@@ -420,9 +420,9 @@ namespace Alivever.Com.Compiler
         }//HasInfo(ECompileInfo _InfoType)
 
         /// <summary>
-        /// ¶¨ÐÔÅÐ¶Ïµ±Ç°ÐÅÏ¢¼¯ºÏÖÐÊÇ·ñ°üº¬ÓÐ±È_InfoType¸ü¼ÓÑÏÖØµÄÐÅÏ¢¡£
-        /// ÕâÍ¨³£ÓÐÖúÓÚÒ»Ð©±àÒëºó´¦ÀíµÄ½øÐÐ¡£
-        /// ÀýÈç£ºÈç¹û´æÔÚÓÐ±Èwarrning¸ü¸ßÒÔÉÏ¼¶±ðµÄÎÊÌâÊÇ£¬¾ÍÔÝÍ£ºóÐø´¦Àí¡£
+        /// å®šæ€§åˆ¤æ–­å½“å‰ä¿¡æ¯é›†åˆä¸­æ˜¯å¦åŒ…å«æœ‰æ¯”_InfoTypeæ›´åŠ ä¸¥é‡çš„ä¿¡æ¯ã€‚
+        /// è¿™é€šå¸¸æœ‰åŠ©äºŽä¸€äº›ç¼–è¯‘åŽå¤„ç†çš„è¿›è¡Œã€‚
+        /// ä¾‹å¦‚ï¼šå¦‚æžœå­˜åœ¨æœ‰æ¯”warrningæ›´é«˜ä»¥ä¸Šçº§åˆ«çš„é—®é¢˜æ˜¯ï¼Œå°±æš‚åœåŽç»­å¤„ç†ã€‚
         /// </summary>
         /// <param name="_InfoType"></param>
         /// <returns></returns>
@@ -439,7 +439,7 @@ namespace Alivever.Com.Compiler
         }//HasInfoAndSupperInfo(ECompileInfo _InfoType)
 
         /// <summary>
-        /// ÊÇ·ñÓÐWarrning»òÓÐ±ÈWarrning¸ü¸ß¼¶±ðµÄ±àÒëÐÅÏ¢
+        /// æ˜¯å¦æœ‰Warrningæˆ–æœ‰æ¯”Warrningæ›´é«˜çº§åˆ«çš„ç¼–è¯‘ä¿¡æ¯
         /// </summary>
         public bool HasWarrningAndSupper
         {
@@ -447,7 +447,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÊÇ·ñÓÐNormalWarrning»òÓÐ±ÈNormalWarrning¸ü¸ß¼¶±ðµÄ±àÒëÐÅÏ¢
+        /// æ˜¯å¦æœ‰NormalWarrningæˆ–æœ‰æ¯”NormalWarrningæ›´é«˜çº§åˆ«çš„ç¼–è¯‘ä¿¡æ¯
         /// </summary>
         public bool HasNormalWarrningAndSupper
         {
@@ -455,7 +455,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÊÇ·ñÓÐ±ÈNormalWarrning¸ü¸ß¼¶±ðµÄ±àÒëÐÅÏ¢£¨²»º¬NormalWarrning£©
+        /// æ˜¯å¦æœ‰æ¯”NormalWarrningæ›´é«˜çº§åˆ«çš„ç¼–è¯‘ä¿¡æ¯ï¼ˆä¸å«NormalWarrningï¼‰
         /// </summary>
         public bool HasSupperThenNormalWarrning
         {
@@ -463,7 +463,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÊÇ·ñÓÐNormalError»òÓÐ±ÈNormalError¸ü¸ß¼¶±ðµÄ±àÒëÐÅÏ¢
+        /// æ˜¯å¦æœ‰NormalErroræˆ–æœ‰æ¯”NormalErroræ›´é«˜çº§åˆ«çš„ç¼–è¯‘ä¿¡æ¯
         /// </summary>
         public bool HasNormalErrorAndSupper
         {
@@ -471,7 +471,7 @@ namespace Alivever.Com.Compiler
         }
 
         /// <summary>
-        /// ÊÇ·ñÓÐ±ÈNormalError¸ü¸ß¼¶±ðµÄ±àÒëÐÅÏ¢£¨²»º¬NormalError£©
+        /// æ˜¯å¦æœ‰æ¯”NormalErroræ›´é«˜çº§åˆ«çš„ç¼–è¯‘ä¿¡æ¯ï¼ˆä¸å«NormalErrorï¼‰
         /// </summary>
         public bool HasSupperThenNormalError
         {
@@ -479,7 +479,7 @@ namespace Alivever.Com.Compiler
         }
 
 
-        #endregion//¶¨ÐÔÅÐ¶Ï½á¹û
+        #endregion//å®šæ€§åˆ¤æ–­ç»“æžœ
 
 
     }//class CCompileInfoInsList

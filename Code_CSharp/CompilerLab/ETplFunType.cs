@@ -14,7 +14,7 @@ using System.Text;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// ±àÒëÆ÷¹¦ÄÜÀàĞÍ
+    /// ç¼–è¯‘å™¨åŠŸèƒ½ç±»å‹
     /// </summary>
     public enum ETplFunType
     {

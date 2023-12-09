@@ -16,37 +16,37 @@ using Alivever.Com.DevBasic.BasicLib;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// ������Ϣ�����Ͷ���
+    /// 编译信息的类型定义
     /// </summary>
     public enum ECompileInfo
     {
         /// <summary>
-        /// δ֪. ��Ϣ����û�б�ָ�ɡ�
+        /// 未知. 信息类型没有被指派。
         /// </summary>
         eUnknow = 0 ,
 
         /// <summary>
-        /// �����Դ��󡣳������������ǻ�ֱ�ӵ��±����쳣��ֹ�����ұ�������Ч��
+        /// 崩溃性错误。出现这种问题是会直接导致编译异常中止，并且编译结果无效。
         /// </summary>
         //eCrash = 10, 
 
         /// <summary>
-        /// �����г��ֵĴ��󣬿��ܵ��½��������������ȫ��ȷ����������Ҫ��ֹ�����뻹���Լ������С���
+        /// 编译中出现的错误，可能导致结果集不完整或不完全正确，但并不需要中止，编译还可以继续进行。。
         /// </summary>
         eError = 20,
 
         /// <summary>
-        /// ���档��Ȼ���뻹���Լ����������п�����������Ǳ�ڵ����⣬��������Ӱ�쵽���Ĺ�����
+        /// 警告。虽然编译还可以继续，但是有可能引发各类潜在的问题，或者严重影响到今后的工作。
         /// </summary>
         eWarrning = 30,
 
         /// <summary>
-        /// ���顣����һЩ���澭���Եĵط������һЩ�Ľ����飬�Ա�����ý��Ĺ������ø��û��������
+        /// 建议。对于一些常规经验性的地方，提出一些改进建议，以便可以让今后的工作做得更好或更完美。
         /// </summary>
         eSuggestion = 40,
 
         /// <summary>
-        /// û���κ��ض��������Ϣ�������eSuggestion���͡����������κα����з�������Ϣ��
+        /// 没有任何特定含义的消息。级别比eSuggestion更低。它可能是任何编译中发生的信息。
         /// </summary>
         eMessage = 50
 
@@ -65,7 +65,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECompileInfo>
                 (
                 ECompileInfo.eError,
-                "�����г��ֵĴ��󣬿��ܵ��½��������������ȫ��ȷ����������Ҫ��ֹ�����뻹���Լ�������",
+                "编译中出现的错误，可能导致结果集不完整或不完全正确，但并不需要中止，编译还可以继续进行",
                 ECompileInfo.eError.ToString(),
                 "Error", "Err", string.Empty)
                 );
@@ -73,7 +73,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECompileInfo>
                 (
                 ECompileInfo.eMessage,
-                "û���κ��ض��������Ϣ�������eSuggestion���͡����������κα����з�������Ϣ��",
+                "没有任何特定含义的消息。级别比eSuggestion更低。它可能是任何编译中发生的信息。",
                 ECompileInfo.eError.ToString(),
                 "Message", "Msg", string.Empty)
                 );
@@ -81,7 +81,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECompileInfo>
                 (
                 ECompileInfo.eSuggestion,
-                "���顣����һЩ���澭���Եĵط������һЩ�Ľ����飬�Ա�����ý��Ĺ������ø��û��������",
+                "建议。对于一些常规经验性的地方，提出一些改进建议，以便可以让今后的工作做得更好或更完美。",
                 ECompileInfo.eError.ToString(),
                 "Suggestion", "Sugg", string.Empty)
                 );
@@ -89,7 +89,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECompileInfo>
                 (
                 ECompileInfo.eUnknow,
-                " δ֪. ��Ϣ����û�б�ָ�ɡ�",
+                " 未知. 信息类型没有被指派。",
                 ECompileInfo.eError.ToString(),
                 "Unknow", "Unknow", string.Empty)
                 );
@@ -97,7 +97,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECompileInfo>
                 (
                 ECompileInfo.eWarrning,
-                "���档��Ȼ���뻹���Լ����������п�����������Ǳ�ڵ����⣬��������Ӱ�쵽���Ĺ���",
+                "警告。虽然编译还可以继续，但是有可能引发各类潜在的问题，或者严重影响到今后的工作",
                 ECompileInfo.eError.ToString(),
                 "Warrning", "Warr", string.Empty)
                 );

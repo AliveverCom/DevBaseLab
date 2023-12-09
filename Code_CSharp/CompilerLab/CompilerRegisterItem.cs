@@ -14,33 +14,33 @@ using System.Text;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// Éè¼ÆÆ÷ÊÓÍ¼µÄ»ù±¾ĞÅÏ¢¶¨ÒåÀà
+    /// è®¾è®¡å™¨è§†å›¾çš„åŸºæœ¬ä¿¡æ¯å®šä¹‰ç±»
     /// </summary>
     public class CCompilerRegisterItem
     {
         /// <summary>
-        /// Î¨Ò»ID±êÊ¾
+        /// å”¯ä¸€IDæ ‡ç¤º
         /// </summary>
         public string IdStr = string.Empty;
 
         /// <summary>
-        /// ±¾¶ÔÏóµÄÃû³Æ¡£¿ÉÒÔÎª¿ÕÖµ
+        /// æœ¬å¯¹è±¡çš„åç§°ã€‚å¯ä»¥ä¸ºç©ºå€¼
         /// </summary>
         public string NameStr = string.Empty;
 
         /// <summary>
-        ///  ¶ÔÏóµÄÃèÊöËµÃ÷
+        ///  å¯¹è±¡çš„æè¿°è¯´æ˜
         /// </summary>
         public string DescStr = string.Empty;
 
         
         /// <summary>
-        /// ¸ÃÊÓÍ¼ÏÂÊôµÄËùÓĞÄ£°å[string IdStr, CCompilerTpl]
+        /// è¯¥è§†å›¾ä¸‹å±çš„æ‰€æœ‰æ¨¡æ¿[string IdStr, CCompilerTpl]
         /// </summary>
         public Dictionary<string, CCompilerTpl> Tpls = new Dictionary<string,CCompilerTpl>();
 
         /// <summary>
-        /// ¸ù¾İÖ¸¶¨µÄ±àÒëÆ÷ÀàĞÍµÄµ½ÏàÓ¦µÄÄ£°å[string IdStr,CCompilerTpl ]
+        /// æ ¹æ®æŒ‡å®šçš„ç¼–è¯‘å™¨ç±»å‹çš„åˆ°ç›¸åº”çš„æ¨¡æ¿[string IdStr,CCompilerTpl ]
         /// </summary>
         /// <param name="_eTplFunType"></param>
         /// <returns></returns>
@@ -58,7 +58,7 @@ namespace Alivever.Com.Compiler
         }//GetTpls()
 
         /// <summary>
-        /// ¸ù¾İÖ¸¶¨µÄ±àÒëÆ÷ÀàĞÍµÄµ½Î¨Ò»µÄÄ¬ÈÏÄ£°å
+        /// æ ¹æ®æŒ‡å®šçš„ç¼–è¯‘å™¨ç±»å‹çš„åˆ°å”¯ä¸€çš„é»˜è®¤æ¨¡æ¿
         /// </summary>
         /// <param name="_eTplFunType"></param>
         /// <returns></returns>

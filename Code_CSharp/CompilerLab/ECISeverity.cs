@@ -17,44 +17,44 @@ using Alivever.Com.DevBasic.BasicLib;
 namespace Alivever.Com.Compiler
 {
     /// <summary>
-    /// Compile Info Severity. ±àÒëĞÅÏ¢µÄÑÏÖØµÈ¼¶¡£Õâ¸öÑÏÖØµÈ¼¶²Î¿¼ÁËbugzillaµÄÑÏÖØµÈ¼¶Éè¶¨
+    /// Compile Info Severity. ç¼–è¯‘ä¿¡æ¯çš„ä¸¥é‡ç­‰çº§ã€‚è¿™ä¸ªä¸¥é‡ç­‰çº§å‚è€ƒäº†bugzillaçš„ä¸¥é‡ç­‰çº§è®¾å®š
     /// </summary>
     public enum ECISeverity
     {
         /// <summary>
-        /// Ôì³É²Ù×÷ÏµÍ³±ÀÀ£»ò³ÌĞòÎÄ¼şÊÜËğ
+        /// é€ æˆæ“ä½œç³»ç»Ÿå´©æºƒæˆ–ç¨‹åºæ–‡ä»¶å—æŸ
         /// </summary>
         eBlocker= 0 ,
 
         /// <summary>
-        /// Èí¼ş×ÔÉí±ÀÀ££¬»òÎŞ·¨¼ÌĞøÔËĞĞ
+        /// è½¯ä»¶è‡ªèº«å´©æºƒï¼Œæˆ–æ— æ³•ç»§ç»­è¿è¡Œ
         /// </summary>
         eCritical = 100,
 
         /// <summary>
-        /// Ôì³ÉÑÏÖØ´íÎó£¬ÑÏÖØÓ°ÏìÕı³£Ê¹ÓÃ
+        /// é€ æˆä¸¥é‡é”™è¯¯ï¼Œä¸¥é‡å½±å“æ­£å¸¸ä½¿ç”¨
         /// </summary>
         eMajor = 200,
 
         /// <summary>
-        /// Ò»°ãĞÔÎÊÌâ
+        /// ä¸€èˆ¬æ€§é—®é¢˜
         /// </summary>
         eNormal = 300,
 
         /// <summary>
-        /// ÇáÎ¢µÄÎÊÌâ
+        /// è½»å¾®çš„é—®é¢˜
         /// </summary>
         eMinor = 400,
 
         /// <summary>
-        /// ËöËéµÄÎÊÌâ
+        /// çç¢çš„é—®é¢˜
         /// </summary>
         eTrivial = 500
 
     }//enum ECISeverity
 
     /// <summary>
-    /// Õë¶ÔECISeverityµÄ×Ö·û´®¹ÜÀíÀà
+    /// é’ˆå¯¹ECISeverityçš„å­—ç¬¦ä¸²ç®¡ç†ç±»
     /// </summary>
     public class CECISeverity : CEnumMgrBase<ECISeverity>
     {
@@ -70,7 +70,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eBlocker,
-                "ÑÏÖØµÈ¼¶Îª±ÀÀ£¡£Í¨³£ÊÇ·¢ÏÖÁË¿ÉÄÜµ¼ÖÂÑÏÖØ±ÀÀ£¡¢³ÌĞòÎŞ·¨¼ÌĞø½øĞĞµÄÑÏÖØÎÊÌâ¡£ĞèÒªÁ¢¼´½â¾ö¡£",
+                "ä¸¥é‡ç­‰çº§ä¸ºå´©æºƒã€‚é€šå¸¸æ˜¯å‘ç°äº†å¯èƒ½å¯¼è‡´ä¸¥é‡å´©æºƒã€ç¨‹åºæ— æ³•ç»§ç»­è¿›è¡Œçš„ä¸¥é‡é—®é¢˜ã€‚éœ€è¦ç«‹å³è§£å†³ã€‚",
                 ECISeverity.eBlocker.ToString(),
                 "Blocker", "Blk", string.Empty)
                 );
@@ -78,7 +78,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eCritical,
-                "ÑÏÖØµÈ¼¶Îª½ô¼±¡£Í¨³£ÊÇ·¢ÏÖÁËÑÏÖØÓ°Ïì³ÌĞòÕı³£¼ÌĞøµÄÑÏÖØÎÊÌâ¡£½¨ÒéÁ¢¼´½â¾ö¡£",
+                "ä¸¥é‡ç­‰çº§ä¸ºç´§æ€¥ã€‚é€šå¸¸æ˜¯å‘ç°äº†ä¸¥é‡å½±å“ç¨‹åºæ­£å¸¸ç»§ç»­çš„ä¸¥é‡é—®é¢˜ã€‚å»ºè®®ç«‹å³è§£å†³ã€‚",
                 ECISeverity.eCritical.ToString(),
                 "Critical", "Crtl", string.Empty)
                 );
@@ -86,7 +86,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eMajor,
-                "ÑÏÖØµÈ¼¶ÎªÖØÒª¡£Í¨³£ÊÇ·¢ÏÖÁËÓ°Ïì³ÌĞòÕı³£Ê¹ÓÃµÄ½ÏÑÏÖØÎÊÌâ¡£½¨ÒéÓÅÏÈ½â¾ö",
+                "ä¸¥é‡ç­‰çº§ä¸ºé‡è¦ã€‚é€šå¸¸æ˜¯å‘ç°äº†å½±å“ç¨‹åºæ­£å¸¸ä½¿ç”¨çš„è¾ƒä¸¥é‡é—®é¢˜ã€‚å»ºè®®ä¼˜å…ˆè§£å†³",
                 ECISeverity.eMajor.ToString(),
                 "Major", "Mjr", string.Empty)
                 );
@@ -94,7 +94,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eMinor,
-                "ÑÏÖØµÈ¼¶ÎªÇáÎ¢¡£²»Ó°Ïì³ÌĞòÕı³£Ê¹ÓÃ£¬µ«ĞèÒª¸Ä½øµÄÎÊÌâ¡£",
+                "ä¸¥é‡ç­‰çº§ä¸ºè½»å¾®ã€‚ä¸å½±å“ç¨‹åºæ­£å¸¸ä½¿ç”¨ï¼Œä½†éœ€è¦æ”¹è¿›çš„é—®é¢˜ã€‚",
                 ECISeverity.eMinor.ToString(),
                 "eMinor", "Mnr", string.Empty)
                 );
@@ -102,7 +102,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eNormal,
-                "ÑÏÖØµÈ¼¶ÎªÒ»°ã¡£Ê¹ÓÃÖĞµÄÒ»°ãĞÔbug,¿É°´ÕÕÕı³£ÓÅÏÈ¼¶´¦Àí¡£",
+                "ä¸¥é‡ç­‰çº§ä¸ºä¸€èˆ¬ã€‚ä½¿ç”¨ä¸­çš„ä¸€èˆ¬æ€§bug,å¯æŒ‰ç…§æ­£å¸¸ä¼˜å…ˆçº§å¤„ç†ã€‚",
                 ECISeverity.eNormal.ToString(),
                 "Normal", "Nml", string.Empty)
                 );
@@ -110,7 +110,7 @@ namespace Alivever.Com.Compiler
             this.AddItem(new CEnumItemBase<ECISeverity>
                 (
                 ECISeverity.eTrivial,
-                "ÑÏÖØµÈ¼¶ÎªËöËé¡£²»Ó°ÏìÏµÍ³Õı³£ÔËĞĞ£¬Í¨³£½öÊÇ¸ö±ğ¿Í»§µÄĞ¡±§Ô¹¡£ÈçÎŞ¾­Àú¿ÉÒÔÔİÊ±²»Àí»á¡£",
+                "ä¸¥é‡ç­‰çº§ä¸ºçç¢ã€‚ä¸å½±å“ç³»ç»Ÿæ­£å¸¸è¿è¡Œï¼Œé€šå¸¸ä»…æ˜¯ä¸ªåˆ«å®¢æˆ·çš„å°æŠ±æ€¨ã€‚å¦‚æ— ç»å†å¯ä»¥æš‚æ—¶ä¸ç†ä¼šã€‚",
                 ECISeverity.eTrivial.ToString(),
                 "Trivial", "Tvl", string.Empty)
                 );
